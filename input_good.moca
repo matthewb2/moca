@@ -1,0 +1,6 @@
+fn main() {
+    println!("Hello Moca Engine!");
+    let:16 p1;
+    let:16 p2;
+    p2 = p1;
+}
