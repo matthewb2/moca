@@ -23,7 +23,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src ${CMAKE_CURRENT_BINARY_DIR})
 # 모든 모듈을 하나로 엮어 최종 Moca 컴파일러 실행 파일 생성
 add_executable(moca_compiler
     ${BISON_MocaParser_OUTPUTS}
-    ${FLEX_MocaLexer_OUTPUTS}
+    ${FLEX_MocaLexer_OUTPUTS}    
     src/ast.c
     src/ownership.c
     src/codegen.c

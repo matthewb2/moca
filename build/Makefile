@@ -116,6 +116,163 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named moca_compiler
+
+# Build rule for target.
+moca_compiler: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 moca_compiler
+.PHONY : moca_compiler
+
+# fast build rule for target.
+moca_compiler/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/build
+.PHONY : moca_compiler/fast
+
+lexer.o: lexer.c.o
+.PHONY : lexer.o
+
+# target to build an object file
+lexer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/lexer.c.o
+.PHONY : lexer.c.o
+
+lexer.i: lexer.c.i
+.PHONY : lexer.i
+
+# target to preprocess a source file
+lexer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/lexer.c.i
+.PHONY : lexer.c.i
+
+lexer.s: lexer.c.s
+.PHONY : lexer.s
+
+# target to generate assembly for a file
+lexer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/lexer.c.s
+.PHONY : lexer.c.s
+
+parser.o: parser.c.o
+.PHONY : parser.o
+
+# target to build an object file
+parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/parser.c.o
+.PHONY : parser.c.o
+
+parser.i: parser.c.i
+.PHONY : parser.i
+
+# target to preprocess a source file
+parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/parser.c.i
+.PHONY : parser.c.i
+
+parser.s: parser.c.s
+.PHONY : parser.s
+
+# target to generate assembly for a file
+parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/parser.c.s
+.PHONY : parser.c.s
+
+src/ast.o: src/ast.c.o
+.PHONY : src/ast.o
+
+# target to build an object file
+src/ast.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/ast.c.o
+.PHONY : src/ast.c.o
+
+src/ast.i: src/ast.c.i
+.PHONY : src/ast.i
+
+# target to preprocess a source file
+src/ast.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/ast.c.i
+.PHONY : src/ast.c.i
+
+src/ast.s: src/ast.c.s
+.PHONY : src/ast.s
+
+# target to generate assembly for a file
+src/ast.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/ast.c.s
+.PHONY : src/ast.c.s
+
+src/codegen.o: src/codegen.c.o
+.PHONY : src/codegen.o
+
+# target to build an object file
+src/codegen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/codegen.c.o
+.PHONY : src/codegen.c.o
+
+src/codegen.i: src/codegen.c.i
+.PHONY : src/codegen.i
+
+# target to preprocess a source file
+src/codegen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/codegen.c.i
+.PHONY : src/codegen.c.i
+
+src/codegen.s: src/codegen.c.s
+.PHONY : src/codegen.s
+
+# target to generate assembly for a file
+src/codegen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/codegen.c.s
+.PHONY : src/codegen.c.s
+
+src/main.o: src/main.c.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/main.c.s
+.PHONY : src/main.c.s
+
+src/ownership.o: src/ownership.c.o
+.PHONY : src/ownership.o
+
+# target to build an object file
+src/ownership.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/ownership.c.o
+.PHONY : src/ownership.c.o
+
+src/ownership.i: src/ownership.c.i
+.PHONY : src/ownership.i
+
+# target to preprocess a source file
+src/ownership.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/ownership.c.i
+.PHONY : src/ownership.c.i
+
+src/ownership.s: src/ownership.c.s
+.PHONY : src/ownership.s
+
+# target to generate assembly for a file
+src/ownership.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/src/ownership.c.s
+.PHONY : src/ownership.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +281,25 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... moca_compiler"
+	@echo "... lexer.o"
+	@echo "... lexer.i"
+	@echo "... lexer.s"
+	@echo "... parser.o"
+	@echo "... parser.i"
+	@echo "... parser.s"
+	@echo "... src/ast.o"
+	@echo "... src/ast.i"
+	@echo "... src/ast.s"
+	@echo "... src/codegen.o"
+	@echo "... src/codegen.i"
+	@echo "... src/codegen.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/ownership.o"
+	@echo "... src/ownership.i"
+	@echo "... src/ownership.s"
 .PHONY : help
 
 

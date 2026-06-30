@@ -1,5 +1,5 @@
 %{
-#include "parser.tab.h"
+#include "parser.h"
 #include <string.h>
 %}
 
@@ -25,8 +25,11 @@
 "("             { return '('; }
 ")"             { return ')'; }
 
-[ \t\n]+        { /* 공백 무시 */ }
-.               { printf("Moca Lexer Error: %s\n", yytext); }
+"#"([^\n]*)     { /* 한 줄 주석 스킵 */ }
+
+[ \t\n\r]+      { /* 공백 및 개행 무시 */ }
+
+.               { /* 알 수 없는 문자 무시하여 파서 크래시 방지 */ }
 %%
 
 int yywrap() { return 1; }

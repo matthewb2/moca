@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/sharon/moca-compiler/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/moca_compiler.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,8 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/moca_compiler.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/moca_compiler.dir
+
+# All Build rule for target.
+CMakeFiles/moca_compiler.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sharon/moca-compiler/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target moca_compiler"
+.PHONY : CMakeFiles/moca_compiler.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/moca_compiler.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sharon/moca-compiler/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/moca_compiler.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sharon/moca-compiler/build/CMakeFiles 0
+.PHONY : CMakeFiles/moca_compiler.dir/rule
+
+# Convenience name for target.
+moca_compiler: CMakeFiles/moca_compiler.dir/rule
+.PHONY : moca_compiler
+
+# clean rule for target.
+CMakeFiles/moca_compiler.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/moca_compiler.dir/build.make CMakeFiles/moca_compiler.dir/clean
+.PHONY : CMakeFiles/moca_compiler.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

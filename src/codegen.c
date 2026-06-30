@@ -4,6 +4,9 @@
 #include <string.h>
 #include "codegen.h"
 
+// 핵심: 코드 생성기에서도 ASTNode 구조체 본체를 알 수 있도록 ast.h를 주입합니다.
+#include "ast.h"
+
 static FILE* out = NULL;
 static int indent_level = 0;
 

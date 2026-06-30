@@ -7,7 +7,14 @@
 
 extern int yyparse();
 extern FILE* yyin;
-extern ASTNode* root_node;
+
+// 만약 codegen 관련 헤더가 별도로 있다면 포함하고, 
+// 없다면 아래와 같이 전방 선언을 명시해 경고를 지웁니다.
+void init_codegen(FILE* out);
+void generate_code(ASTNode* node);
+void finalize_codegen();
+
+extern ASTNode* root_node; // 전역 변수 참조 명시
 
 int main(int argc, char** argv) {
     if (argc < 2) {

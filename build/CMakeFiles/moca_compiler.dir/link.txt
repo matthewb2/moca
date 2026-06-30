@@ -1,0 +1,1 @@
+/usr/bin/cc  -O3 -Wall CMakeFiles/moca_compiler.dir/parser.c.o CMakeFiles/moca_compiler.dir/lexer.c.o CMakeFiles/moca_compiler.dir/src/ast.c.o CMakeFiles/moca_compiler.dir/src/ownership.c.o CMakeFiles/moca_compiler.dir/src/codegen.c.o CMakeFiles/moca_compiler.dir/src/main.c.o -o moca_compiler

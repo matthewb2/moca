@@ -2,7 +2,7 @@
 #ifndef OWNERSHIP_H
 #define OWNERSHIP_H
 
-#include "ast.h"
+#include "ast.h" // 👈 여기에서 ASTNode 정의를 직접 완벽하게 가져옵니다.
 
 typedef enum {
     STATE_UNINIT,
@@ -18,7 +18,7 @@ typedef struct {
 } MocaSymbol;
 
 void init_ownership_engine();
-void analyze_ownership(ASTNode* node);
+void analyze_ownership(ASTNode* node); // 이제 완벽하게 호환됩니다.
 void enter_scope();
 void exit_scope();
 
